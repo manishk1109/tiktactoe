@@ -54,19 +54,15 @@ start.addEventListener('click',()=>{
 
 
 let boxes = document.querySelectorAll(".box");
-let count = 0;
+
 Array.from(boxes).forEach(box => {
     box.addEventListener('click', () => {
         if (box.innerHTML === "" && !gameover) {
             box.innerHTML = turn;
             checkWin();
             changeTurn();
-            count++;
-            if (count == 9) {
-                document.querySelector('.result1').innerText = "It's a tie!"
-            }
+            
+            
         }
-
-
     });
 });
