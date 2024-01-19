@@ -39,6 +39,10 @@ body{
 
 }
 
+.box:hover{
+    background-color: pink;
+}
+
 .result, .result1{
     text-align: center;
     margin-top: 3vh;
@@ -68,4 +72,20 @@ body{
     border-radius: 20px;
     cursor: pointer;
     margin-top: 20px;
+}
+
+.t0{
+    border-top: 0;
+}
+
+.b0{
+    border-bottom: 0;
+}
+
+.r0{
+    border-right: 0;
+}
+
+.l0{
+    border-left: 0;
 }

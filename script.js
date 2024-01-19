@@ -1,4 +1,6 @@
 let turn = 'X';
+let turnaudio = new Audio("ting.mp3");
+let gameoveraudio = new Audio("gameover.mp3");
 let gameover = false;
 const changeTurn = () => {
     if (turn === 'X') {
@@ -28,6 +30,10 @@ const checkWin = () => {
             document.querySelector('.result').innerText = boxtext[e[0]].innerText + " won"
             document.querySelector('.winnerMsz').style.display = "block"
             gameover = true;
+            if(gameover){
+                gameoveraudio.play();
+            }
+
         }
     })
 
@@ -54,14 +60,15 @@ start.addEventListener('click',()=>{
 
 
 let boxes = document.querySelectorAll(".box");
-
+let count = 0
 Array.from(boxes).forEach(box => {
     box.addEventListener('click', () => {
         if (box.innerHTML === "" && !gameover) {
             box.innerHTML = turn;
             checkWin();
             changeTurn();
-            
+            turnaudio.play();
+            count++
             
         }
     });
