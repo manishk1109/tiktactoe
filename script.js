@@ -63,9 +63,7 @@ Array.from(boxes).forEach(box => {
             changeTurn();
             count++;
             if (count == 9) {
-                document.querySelector('.result').innerText = "It's a tie!"
-
-
+                document.querySelector('.result1').innerText = "It's a tie!"
             }
         }
 
