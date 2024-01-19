@@ -9,6 +9,16 @@ body{
     background-color: aqua;
 }
 
+.header{
+    height: 10vh;
+    text-align: center;
+    background-color: #bbd0ff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
 .winnerMsz{
     height: 100vh;
     display: none;
