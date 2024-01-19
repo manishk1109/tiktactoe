@@ -34,7 +34,7 @@ body{
     display: grid;
     grid-template-columns: repeat(3,100px);
     justify-content: center;
-    margin-top: 20vh;
+    margin-top: 15vh;
 }
 
 .box{
